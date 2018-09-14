@@ -10,7 +10,7 @@ export default class MainView extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>MainView</Text>
+                <Text>Hello world</Text>
             </View>
         );
     }
