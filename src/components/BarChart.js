@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
-  ScrollView,
   StyleSheet,
-  Platform,
 } from 'react-native';
 import {
   VictoryBar,
@@ -12,7 +10,6 @@ import {
   VictoryTheme,
   VictoryAxis,
 } from 'victory-native';
-import { random, range } from "lodash";
 
 const data = [
   {quarter: 1, earnings: 13000},
@@ -65,14 +62,12 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
-    // fontFamily: (Platform.OS === "ios") ? "Menlo" : "monospace",
     fontWeight: "bold",
     marginTop: 25,
     marginBottom: 20,
   },
   heading: {
     fontSize: 27,
-    // fontFamily: (Platform.OS === "ios") ? "Menlo" : "monospace",
     fontWeight: "bold",
     marginTop: 30,
     marginBottom: 30,

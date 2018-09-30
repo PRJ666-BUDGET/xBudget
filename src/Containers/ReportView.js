@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { VictoryBar } from 'victory-native';
+import { 
+    StyleSheet, 
+    ScrollView, 
+    Text 
+} from 'react-native';
 import BarChart from '../Components/BarChart';
+import PieChart from '../Components/PieChart';
+import LineChart from '../Components/LineChart';
 
 export default class ReportView extends Component {
     static navigationOptions = {
@@ -10,10 +15,12 @@ export default class ReportView extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <Text>ReportView</Text>
                 <BarChart />
-            </View>
+                <PieChart />
+                {/* <LineChart /> */}
+            </ScrollView>
         );
     }
 }
