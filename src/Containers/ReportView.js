@@ -19,7 +19,7 @@ export default class ReportView extends Component {
                 <Text>ReportView</Text>
                 <BarChart />
                 <PieChart />
-                {/* <LineChart /> */}
+                <LineChart />
             </ScrollView>
         );
     }
